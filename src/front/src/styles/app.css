@@ -1,0 +1,209 @@
+body {
+  background-image: linear-gradient(
+    0deg,
+    #242424,
+    #c4c4c4,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff
+  );
+  min-height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0;
+}
+.subtitle-conversor {
+  font-family: "Oswald";
+  letter-spacing: 1.5px;
+  font-size: 18px;
+  color: #2c2c2c;
+  font-weight: 300;
+  text-align: center;
+}
+
+.dropdown-box {
+  background-color: transparent;
+  max-width: 600px;
+  margin: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 1rem;
+  border-radius: 5px;
+  /* box-shadow: 1px 1px 10px 1px rgb(185, 185, 185); */
+  max-width: 600px;
+}
+.title-conversor {
+  color: #f02738;
+  font-family: "Oswald";
+  letter-spacing: 1.5px;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.title-conversor span {
+  vertical-align: sub;
+  font-size: 28px;
+}
+.file-form div p {
+  font-family: "Oswald";
+  font-size: 14px;
+  font-weight: 300;
+  color: #464646;
+  text-align: start;
+  letter-spacing: 1.5px;
+}
+
+.file-form div {
+  text-align: center;
+}
+.submit-button:hover {
+  opacity: 1;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+.submit-button {
+  background-color: #f02738;
+  padding: 0.5rem 50px;
+  font-family: "Oswald";
+  font-size: 18px;
+  border: none;
+  margin: 40px auto 0 auto;
+  color: white;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  opacity: 1;
+  transition-duration: 300ms;
+  max-width: 300px;
+  margin-left: auto;
+  width: 250px;
+  /* box-shadow: 1px 1px 5px 1px rgb(39, 39, 39); */
+}
+
+.file-form label {
+  width: 600px;
+  height: 200px;
+  background-color: #ffffff;
+  font-family: "Oswald";
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  color: grey;
+  font-weight: 200;
+  border: dashed 1px #222222;
+  transition-duration: 300ms;
+}
+
+.file-form label:hover {
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+
+.download-button-div {
+  text-align: end;
+  display: flex;
+}
+
+.download-button {
+  width: 250px;
+  cursor: pointer;
+  background-color: #f02738;
+  padding: 0.5rem 50px;
+  font-family: "Oswald";
+  font-size: 18px;
+  border: none;
+  margin: 40px auto 20px auto;
+  color: white;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  opacity: 1;
+  transition-duration: 300ms;
+  max-width: 300px;
+  margin-left: auto;
+}
+
+.file-form label svg {
+  display: none;
+}
+
+.file-form label {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: none;
+  letter-spacing: 0;
+}
+
+.file-form label .form-text {
+  text-align: center;
+  margin: 90px 0;
+}
+
+.file-form .form-container {
+  border: dashed 1px #222222;
+
+  /* height: 200px; 
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.file-form .title {
+  font-family: "Oswald";
+  font-weight: bold;
+  text-align: left;
+  margin: 20px 0 10px 0;
+  padding: 0;
+  padding-left: 0;
+  color: black;
+  letter-spacing: 0;
+}
+
+
+
+.uploaded-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  overflow-y: auto;
+}
+.subtitle-files{
+  font-family: "Oswald";
+  letter-spacing: 1.5px;
+  font-size: 18px;
+  color: #adadad;
+  font-weight: 300;
+  text-align: start!important;
+}
+.uploaded-container {
+  margin: 5px 0;
+  
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
