@@ -1,46 +1,59 @@
 import express, { json } from "express";
-import cookieSession from "cookie-session";
-import multer from "multer";
-import { generateReport, downloadFile } from "./controller/report";
-import dotenv from 'dotenv';
-import cors from 'cors';
 
-dotenv.config({ path: 'config.env' });
+import dotenv from "dotenv";
+import http from "http";
+import { Server } from "socket.io";
+import cors from "cors";
+import mongoose from "mongoose";
+import { PhotoQuestionRepleirRouter } from "./router/PhotoQuestionRepleirRouter";
+import { NotFoundError } from "./errors/NotFoundError";
+import morgan from 'morgan';
+import { errorHandler} from './middlewares/ErrorHandler';
+import MenuSocket from "./sockets/MenuSocket";
+
+dotenv.config({ path: "config.env" });
 const PORT = process.env.PORT || 3000;
 
-const uplaod = multer({
-  dest: "temp",
+const app = express();
+app.use(cors());
+
+const httpServer = http.createServer(app);
+const io = new Server(httpServer, {
+  cors: {
+    origin: "*",
+  },
 });
 
-const app = express();
-
-
-const corsOptions ={
-  origin: 'http://localhost:3000',
-  methods: ['POST', 'GET', 'PUT', 'OPTIONS', 'HEAD', 'DELETE'],
-  credentials: true,
+//MONGOO
+if (!process.env.DATABASE_URI) {
+  process.exit();
 }
-app.use(cors(corsOptions));
-
-app.use(
-  cookieSession({
-    httpOnly: true,
-
-    name: "session",
-    secret: "dKQ2xT38XR%Z",
-  })
-);
+mongoose.connect(process.env.DATABASE_URI).then(() => {
+  console.log("DB connection successfull");
+});
 app.use(json());
+app.use(PhotoQuestionRepleirRouter);
+app.all('*', async (req, res) => {
+  throw new NotFoundError();
+});
 
-app.post(
-  "/api/convert",
-  uplaod.array("files"),
-  generateReport
-);
-app.get("/api/download/:file", downloadFile);
-
-app.use('/', express.static('front'))
+app.use("/", express.static("front"));
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
+});
+if (process.env.NODE_ENV === 'dev') {
+  app.use(morgan('dev'));
+}
+app.use(errorHandler);
+
+//SOCKET
+io.on('connect',(socket)=>{
+  MenuSocket(socket,io);
+});
+
+
+httpServer.listen(process.env.PORT,()=>{
+  console.log("Test pipeline")
+  console.log("Listen on "+process.env.PORT );
 });
