@@ -1,0 +1,49 @@
+QUESTION:W
+Mar m. ram...” m Ixogev h 5.5mm .mmmmn
+mu, um, m, m, commune,
+m. m. mum Inmmravm loans m WW, “be" any vzhenns y vzhdadcs can :1 .1
+"1...». de mum v-Imxian
+[InmpomIL Mn podrl emuzav pal uﬄ numua y mm .m \unglmd rm'mmi us 15
+(midway Im mlximn d: 25, no podra‘ (unlener m gmongs, m punms en la pane vmuludi
+dc ll mm. El emall debe acahar en "@[mml cum“.
+la: {Quinn emails no serian valldas:
+mmulggmlilvmm, Annm-aNare1@gmmlcum, ahc@gmal\(om,12]ah(@gmal|.com
+aw dw- deb: cumpllr los suuiemu Rams:
+A law 6 (2mm,
+- 5i empiu‘ par m dram implr at Slgmenle caraaev sm’ um I: Valve en mmuscuhs
+do Is illulenms: I,b,c.
+- 9 efllﬂlﬂl pul GUN par el Siguienle caréaer seri uni hm en may’usculas as \25
+*uhmgs: X.V,Z.
+am arm mm mimems mu 9 dunes. Les dignos ira'n agrupados de we; an [res y
+m Hen Wlﬂl “Moan bllnco 0 WP un guion Solo puede haber dos inrmalos,
+m wr- m sew-m subtles o esmos, new no ambos
+ﬁlm”)! m
+m-m-m
+m m m
+rim m mum
+975 111-111 // no se puedcn mexclav Inmate;
+”513-1343 // PM we fnmm gmpos de «es digilos
+97‘ 31‘ 314 I/ do: espadas ell"! el 1 y el ues.
+
+RESPONSE:
+La pregunta parece estar mal escrita y es difícil de entender. Sin embargo, si intentamos responder a partir de lo que se puede interpretar, parece que se está buscando una validación para direcciones de correo electrónico y números de teléfono con ciertas condiciones. 
+
+Para un correo electrónico válido:
+1. Debe terminar en "@[xxxx].com".
+2. No deben contener caracteres especiales como '#', '^', '(', etc.
+
+Ejemplos de correos no válidos: 
+- mmul@ggmlilvmm
+- Annm-aNare1@gmmlcum
+- ahc@gmalvcom
+- 12]ah(@gmaill.com
+
+Para un número de teléfono válido:
+1. Debe tener 9 dígitos.
+2. Los dígitos deben estar agrupados de tres en tres y separados por un espacio en blanco o un guion.
+3. Solo puede haber dos guiones o espacios, no ambos.
+
+Ejemplos de números de teléfono no válidos:
+- 975 111-111 // no se pueden mezclar espacios y guiones
+- 573-1343 // falta un grupo de tres dígitos
+- 97  31 314 // dos espacios entre el 1 y el tres.

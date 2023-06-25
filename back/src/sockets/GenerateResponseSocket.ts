@@ -3,7 +3,7 @@ import {Server, Socket} from 'socket.io';
 export const generateResponse = async (socket:Socket, io: Server) => {
     socket.on('create-game',async({})=>{
         try{
-            let gameCheck = await MathGame.findOne({'players.socketID':socket.id});
+            /*let gameCheck = await MathGame.findOne({'players.socketID':socket.id});
             if(!gameCheck){
                 let game = new MathGame();
 
@@ -36,7 +36,7 @@ export const generateResponse = async (socket:Socket, io: Server) => {
                 const gameID = game._id.toString();
                 socket.join(gameID);
                 io.to(gameID).emit('updateGame',game);
-            }
+            }*/
         }catch(err){
             console.log(err);
         }
